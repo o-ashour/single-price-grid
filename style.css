@@ -80,14 +80,16 @@ p {
 }
 
 .subscription {
-  flex: content;
+  /* flex: content; */
   background-color: var(--primary-1);
   color: var(--neutral-1);
+  outline: solid 2px hsl(178.5, 36%, 44.1%);
 }
 
 .reasons {
-  flex: content;
+  /* flex: content; */
   background-color: var(--primary-1);
+  color: var(--neutral-1);
   opacity: 0.9;
   color: #fff;
 }
@@ -95,9 +97,17 @@ p {
 /* button */
 .sign-up {
   width: 100%;
+  height: 58px;
+  margin-top: 6%;
+  border: none;
+  /* outline: none; */
+  border-radius: 7px;
   background-color: var(--primary-2);
   color: #fff;
   font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px hsl(178.7, 49.7%, 35.1%)
 }
 
 /* text */
@@ -127,6 +137,11 @@ p {
   margin-bottom: 6%;
 }
 
+.pricing {
+  display: flex;
+  margin-bottom: 3%;
+}
+
 .sub-rate {
   font-size: 2.5rem;
   font-weight: 700;
@@ -137,6 +152,20 @@ p {
   font-size: 1.2rem;
   opacity: 0.6;
   margin-left: 4%;
+  align-self: center;
 }
 
+.reasons h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 7%;
+}
+
+.reasons ul {
+  opacity: 0.6;
+}
+
+.reasons li {
+  margin-bottom: 1%;
+}
 
