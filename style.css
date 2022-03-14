@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+:root {
+  /* Cyan */
+  --primary-1: hsl(179, 62%, 43%); 
+  /* Bright Yellow */
+  --primary-2: hsl(71, 73%, 54%);
+  /* Light Gray */
+  --neutral-1: hsl(204, 43%, 93%);
+  /* Grayish Blue */
+  --neutral-2: hsl(218, 22%, 67%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+iframe,
+video,
+audio {
+  max-width: 100%;
+  border: 0;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-flow: column;
+  flex: content; 
+  margin: 0;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* main styles */
+
+/* containers */
+.containers {
+  padding: 28px 24px;
+  /* letter-spacing: 0.5px; */
+}
+
+.community {
+  padding-bottom: 44px;
+  /* flex: content; */
+  /* display: flex;
+  flex-flow: column;
+  justify-content: space-around; */
+}
+
+.subscription {
+  flex: content;
+  background-color: var(--primary-1);
+  color: var(--neutral-1);
+}
+
+.reasons {
+  flex: content;
+  background-color: var(--primary-1);
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* button */
+.sign-up {
+  width: 100%;
+  background-color: var(--primary-2);
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+}
+
+/* text */
+.community h1 {
+  color: var(--primary-1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+.community h2 {
+  color: var(--primary-2);
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+  font-weight: 400;
+}
+
+.community p {
+  color: var(--neutral-2);
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+.subscription h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6%;
+}
+
+.sub-rate {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.rate-text {
+  /* color: var(--neutral-1); */
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-left: 4%;
+}
+
+
