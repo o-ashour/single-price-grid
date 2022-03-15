@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-
+/* main colours */
 :root {
   /* Cyan */
   --primary-1: hsl(179, 62%, 43%); 
@@ -12,6 +12,7 @@
   --neutral-2: hsl(218, 22%, 67%);
 }
 
+/* reset */
 *,
 *::before,
 *::after {
@@ -65,29 +66,22 @@ p {
 
 /* main styles */
 
-/* containers */
+/* containers, main divs */
 .containers {
   padding: 28px 24px;
-  /* letter-spacing: 0.5px; */
 }
 
 .community {
   padding-bottom: 44px;
-  /* flex: content; */
-  /* display: flex;
-  flex-flow: column;
-  justify-content: space-around; */
 }
 
 .subscription {
-  /* flex: content; */
   background-color: var(--primary-1);
   color: var(--neutral-1);
   outline: solid 2px hsl(178.5, 36%, 44.1%);
 }
 
 .reasons {
-  /* flex: content; */
   background-color: var(--primary-1);
   color: var(--neutral-1);
   opacity: 0.9;
@@ -100,7 +94,6 @@ p {
   height: 58px;
   margin-top: 6%;
   border: none;
-  /* outline: none; */
   border-radius: 7px;
   background-color: var(--primary-2);
   color: #fff;
@@ -110,15 +103,16 @@ p {
   box-shadow: 2px 2px 5px hsl(178.7, 49.7%, 35.1%)
 }
 
-/* text */
-.community h1 {
+/* typography */
+.community h1, 
+.community h2 {
   color: var(--primary-1);
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 10%;
 }
 
-.community h2 {
+.community h3 {
   color: var(--primary-2);
   font-size: 1.2rem;
   margin-bottom: 10%;
@@ -131,7 +125,8 @@ p {
   margin-bottom: 0;
 }
 
-.subscription h1 {
+.subscription h1,
+.subscription h2 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 6%;
@@ -148,14 +143,14 @@ p {
 }
 
 .rate-text {
-  /* color: var(--neutral-1); */
   font-size: 1.2rem;
   opacity: 0.6;
   margin-left: 4%;
   align-self: center;
 }
 
-.reasons h1 {
+.reasons h1,
+.reasons h2 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 7%;
@@ -171,13 +166,14 @@ p {
 
 /* adjust layout to 2-column grid for larger screens */
 @media (min-width: 600px) {
-  /* grid container and items */
+
+  /* grid container */
   body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 2fr; */
   }
   
+  /* grid items */
   .community {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -195,7 +191,6 @@ p {
   }
 
   /* other container adjusments */
-
   .containers {
     display: flex;
     flex-flow: column;
@@ -203,14 +198,15 @@ p {
     padding: 0 16%; 
   }
 
-  /* text adjustment */
-  .community h1 {
+  /* typography adjustment */
+  .community h1,
+  .community h2 {
     margin-bottom: 4%;
     font-size: 2.5rem;
     font-weight: 700;
   }
 
-  .community h2 {
+  .community h3 {
     margin-bottom: 2.5%;
     font-size: 1.7rem;
   }
@@ -221,35 +217,26 @@ p {
     letter-spacing: 1px;
   }
 
-  .subscription h1 {
+  .subscription h1,
+  .subscription h2 {
     font-size: 2rem;
-    /* font-weight: 700; */
     margin-bottom: 4%;
   }
-  
-  .pricing {
-    /* display: flex; */
-    /* margin-bottom: 3%; */
-  }
-  
+
   .sub-rate {
     font-size: 3rem;
-    /* font-weight: 700; */
   }
   
   .rate-text {
-    /* color: var(--neutral-1); */
     font-size: 1.3rem;
-    /* opacity: 0.6; */
     margin-left: 2%;
-    /* align-self: center; */
   }
 
   .subscription p {
     font-size: 1.2rem;
   }
 
-    /* button */
+  /* button */
   .sign-up {
     width: 62%;
     height: 74px;
@@ -257,23 +244,17 @@ p {
     margin-top: 9%;
     align-self: center;
     cursor: pointer;
-    /* transition: all ease-out 1s; */
   }
 
   .sign-up:hover {
     background-color: var(--neutral-1);
     color: var(--neutral-2);
-    /* transition: all ease-out 1s; */
   }
 
-  .reasons h1 {
+  .reasons h1,
+  .reasons h2 {
     font-size: 2rem;
-    /* font-weight: 700; */
     margin-bottom: 6%;
-  }
-  
-  .reasons ul {
-    /* opacity: 0.6; */
   }
   
   .reasons li {
